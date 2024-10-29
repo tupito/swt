@@ -1,4 +1,3 @@
-import { expect } from "chai";
 import capitalize from "../src/capitalize.js";
 
 describe("capitalize.js", () => {
