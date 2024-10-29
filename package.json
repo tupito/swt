@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no tests are implemented yet \" && exit 1"
+    "test": "mocha --reporter mochawesome",
+    "test:coverage": "c8 mocha",
+    "coveralls": "npx c8 report --reporter=lcov && coveralls < coverage/lcov.info"
   },
   "author": "",
   "license": "MIT",
